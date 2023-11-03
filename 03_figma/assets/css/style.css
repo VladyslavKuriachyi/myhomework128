@@ -197,6 +197,7 @@ footer {
 .social_list {
     padding-top: 30px;
     margin-bottom: 60px;
+
 }
 .social_list ul {
     font-size: 0;
@@ -209,12 +210,14 @@ footer {
 
 .social_list li {
     display: inline-block;
+
 }
 .social_list li a {
     display:inline-block;
     width: 40px;
     aspect-ratio: 1;
 }
+
 
 .button {
     display: inline-block;
@@ -234,7 +237,6 @@ footer {
 }
 
 .button:hover {
-    background-color: #f6f6f6;
-    color: #070707;
+    background: 50% 50% no-repeat;
 
 }
