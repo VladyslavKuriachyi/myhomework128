@@ -4,30 +4,32 @@
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Document</title>
-        <style>
-            /* img {
-                width: 100%
-            } */
-            .container {
-                width: min(90%, 970px);
-                margin: 0 auto;
-            }
-            .footer_content {
-                width: min(90%, 970px);
-                margin: 0 auto;
-            }
-        </style>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+        <link rel="stylesheet" href="assets/css/style.css" />
     </head>
     <body>
-        <header>
+        <header class="header">
             <div class="container">
-                <nav>
+                <nav class="main-navigation">
                     <ul>
-                        <li><a href="#">Home</a></li>
-                        <li><a href="#about_me">About_me</a></li>
-                        <li><a href="#skills">Skills</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#contacts">Contacts</a></li>
+                        <li>
+                            <a href="#">Home</a>
+                        </li>
+                        <li>
+                            <a href="#about_me">About me</a>
+                        </li>
+                        <li>
+                            <a href="#skills">Skills</a>
+                        </li>
+                        <li>
+                            <a href="#portfolio">Portfolio</a>
+                        </li>
+                        <li>
+                            <a href="#contacts">Contacts</a>
+                        </li>
                     </ul>
                 </nav>
             </div>
@@ -44,173 +46,216 @@
 
             <section id="about_me" class="about_me">
                 <div class="container">
-                    <h2>About_me</h2>
-                    <p>
-                        Hi, I'm Denis – UX/UI designer from Minsk. I'm
-                        interested in design and everything connected with it.
-                    </p>
-                    <p>
-                        I'm studying at courses "Web and mobile design
-                        interfaces" in IT-Academy.
-                    </p>
-                    <p>
-                        Ready to implement excellent projects with wonderful
-                        people.
-                    </p>
+                    <h2 class="subtitle">About me</h2>
+                    <div class="about_me_text">
+                        <p class="about_me_text1">
+                            Hi, I'm Denis – UX/UI designer from Minsk.<br />I'm
+                            interested in design and everything connected with
+                            it.
+                        </p>
+
+                        <p class="about_me_text2">
+                            I'm studying at courses "Web and mobile design<br />
+                            interfaces" in IT-Academy.
+                        </p>
+
+                        <p class="about_me_text3">
+                            Ready to implement excellent projects <br />
+                            with wonderful people.
+                        </p>
+                    </div>
                 </div>
             </section>
             <section class="Skills-section">
                 <div class="container">
                     <h2 id="skills">Skills</h2>
-                    <div>I work in such programs as</div>
+                    <div class="subtitle">I work in such programs as</div>
                     <ul class="skill_list">
                         <li>
-                            <div class="skill_logo">
-                                <img src="assets/images/Ps.png" alt="Ps" />
-                            </div>
-                            <div class="skill_title">Adobe Photoshop</div>
-                            <div class="skill_raiting">
-                                <span class="star star_dark"></span
-                                ><span class="star star_dark"></span
-                                ><span class="star"></span
-                                ><span class="star"></span
-                                ><span class="star"></span>
-                            </div>
-                        </li>
-                        <li>
-                            <img src="assets/images/Ai.png" alt="Ai" />
-                            <div class="skill_title">Adobe Illustrator</div>
-                            <div class="skill_raiting">
-                                <span class="star star_dark"></span
-                                ><span class="star star_dark"></span
-                                ><span class="star"></span
-                                ><span class="star"></span
-                                ><span class="star"></span>
+                            <div class="skill_item">
+                                <div class="skill_logo">
+                                    <img src="assets/images/Ps.png" alt="Ps" />
+                                </div>
+                                <div class="skill_title">Adobe Photoshop</div>
+                                <div class="skill_raiting">
+                                    <span class="star star_dark"></span
+                                    ><span class="star star_dark"></span
+                                    ><span class="star gray"></span
+                                    ><span class="star gray"></span
+                                    ><span class="star gray"></span>
+                                </div>
                             </div>
                         </li>
                         <li>
-                            <img src="assets/images/Ae.png" alt="Ae" />
-                            <div class="skill_title">Adobe After Effects</div>
-                            <div class="skill_raiting">
-                                <span class="star star_dark"></span
-                                ><span class="star star_dark"></span
-                                ><span class="star"></span
-                                ><span class="star"></span
-                                ><span class="star"></span>
+                            <div class="skill_item">
+                                <div class="skill_logo">
+                                    <img src="assets/images/Ai.png" alt="Ai" />
+                                </div>
+                                <div class="skill_title">Adobe Illustrator</div>
+                                <div class="skill_raiting">
+                                    <span class="star star_dark"></span
+                                    ><span class="star star_dark"></span
+                                    ><span class="star star_dark"></span
+                                    ><span class="star gray"></span
+                                    ><span class="star gray"></span>
+                                </div>
                             </div>
                         </li>
                         <li>
-                            <img src="assets/images/Figma.png" alt="Fg" />
-                            <div class="skill_title">Figma</div>
-                            <div class="skill_raiting">
-                                <span class="star star_dark"></span
-                                ><span class="star star_dark"></span
-                                ><span class="star"></span
-                                ><span class="star"></span
-                                ><span class="star"></span>
+                            <div class="skill_item">
+                                <div class="skill_logo">
+                                    <img src="assets/images/Ae.png" alt="Ae" />
+                                </div>
+                                <div class="skill_title">
+                                    Adobe After Effects
+                                </div>
+                                <div class="skill_raiting">
+                                    <span class="star star_dark"></span
+                                    ><span class="star star_dark"></span
+                                    ><span class="star star_dark"></span
+                                    ><span class="star star_dark"></span
+                                    ><span class="star gray"></span>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="last">
+                            <div class="skill_item">
+                                <div class="skill_logo">
+                                    <img
+                                        src="assets/images/Figma.png"
+                                        alt="Fg"
+                                    />
+                                </div>
+                                <div class="skill_title">Figma</div>
+                                <div class="skill_raiting">
+                                    <span class="star star_dark"></span
+                                    ><span class="star star_dark"></span
+                                    ><span class="star star_dark"></span
+                                    ><span class="star star_dark"></span
+                                    ><span class="star star_dark"></span>
+                                </div>
                             </div>
                         </li>
                     </ul>
                 </div>
             </section>
-            <section class="Portfolio-section">
-                <div class="container"></div>
-                <h2 id="Portfolio">Portfolio</h2>
-                <div class="work_pic">
-                    <img
-                        src="assets/images/Fashion-Store.jpg"
-                        alt="Fashion-Store"
-                    />
-                </div>
-                <div class="work_link">
-                    <a href="#">Online fashion store - Homepage</a>
-                </div>
-                <div class="work_pic_two">
-                    <img 
-                    src="assets/images/reebok_web.png" 
-                    alt="reebok_web" />
-                </div>
-                <div class="work_link">
-                    <a href="#">Reebok Store - Concept</a>
-                </div>
-
-                <div class="work_pic_last">
-                    <img
-                        src="assets/images/braun-landing.jpg"
-                        alt="braun-landing"/>
-                </div>
-                <div class="work_link">
-                    <a href="#">Braun Landing Page - Concept</a>
-                </div>
+            <section id="Portfolio" class="Portfolio-section">
+                <div class="container">
+                <h2>Portfolio</h2>
+              
+                <ul>
+                    <li>
+                        <div class="work_pic">
+                            <img
+                                src="assets/images/Fashion-Store.jpg"
+                                alt="Fashion-Store"
+                            />
+                        </div>
+                        <div class="work_link">
+                            <a href="#"
+                                >Online fashion store - <br />Homepage</a
+                            >
+                        </div>
+                    </li>
+                    <li>
+                        <div class="work_pic">
+                            <img
+                                src="assets/images/reebok_web.png"
+                                alt="reebok_web"
+                            />
+                        </div>
+                        <div class="work_link">
+                            <a href="#">Reebok Store - Concept</a>
+                        </div>    
+                    </li>
+                    
+                    
+                    <li>
+                        <div class="work_pic">
+                            <img
+                                src="assets/images/braun-landing.jpg"
+                                alt="braun-landing"
+                            />
+                        </div>
+                        <div class="work_link">
+                            <a href="#">Braun Landing Page - Concept</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
             </section>
+    
         </main>
 
         <footer id="footer">
             <div class="footer_content">
-                <h3>Contacts</h3>
+                <h2>Contacts</h2>
                 <p class="subtitle">
                     Want to know more or just chat?<br />You are welcome!
                 </p>
-                <div class="button">
-                    <button type="button" name="Send_message">
+                <div class="button_wrap">
+                    <button type="button" class="button">
                         Send Message
                     </button>
                 </div>
-                <ul class="social_list">
-                    <li>
-                        <a
-                            href="#"
-                            title="LinkedIn"
-                            target="_blank"
-                            rel="nofollow"
-                        >
-                            <img
-                                src="assets/images/linkedin.png"
-                                alt="linkedin"
-                            />
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#"
-                            title="Instagram"
-                            target="_blank"
-                            rel="nofollow"
-                        >
-                            <img
-                                src="assets/images/instagram.png"
-                                alt="instagram"
-                            />
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#"
-                            title="Behance"
-                            target="_blank"
-                            rel="nofollow"
-                        >
-                            <img
-                                src="assets/images/behance.png"
-                                alt="behance"
-                            />
-                        </a>
-                    </li>
-                    <li>
-                        <a
-                            href="#"
-                            title="Dribble"
-                            target="_blank"
-                            rel="nofollow"
-                        >
-                            <img
-                                src="assets/images/dribbble.png"
-                                alt="dribbble"
-                            />
-                        </a>
-                    </li>
-                </ul>
-                <div>Like me on LinkedIn, Instagram, Behance, Dribble</div>
+
+                <div class="social_list">
+                    <ul>
+                        <li>
+                            <a
+                                href="#"
+                                title="LinkedIn"
+                                target="_blank"
+                                rel="nofollow"
+                            >
+                                <img
+                                    src="assets/images/linkedin.png"
+                                    alt="linkedin"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                title="Instagram"
+                                target="_blank"
+                                rel="nofollow"
+                            >
+                                <img
+                                    src="assets/images/instagram.png"
+                                    alt="instagram"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                title="Behance"
+                                target="_blank"
+                                rel="nofollow"
+                            >
+                                <img
+                                    src="assets/images/behance.png"
+                                    alt="behance"
+                                />
+                            </a>
+                        </li>
+                        <li>
+                            <a
+                                href="#"
+                                title="Dribble"
+                                target="_blank"
+                                rel="nofollow"
+                            >
+                                <img
+                                    src="assets/images/dribbble.png"
+                                    alt="dribbble"
+                                />
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_text">Like me on LinkedIn, Instagram, Behance, Dribble</div>
             </div>
         </footer>
     </body>
