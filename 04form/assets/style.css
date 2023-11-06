@@ -1,0 +1,15 @@
+
+.form_row {
+    margin-bottom: 20px;
+}
+.form_row label {
+    display: inline-block;
+    width: 200px;
+}
+.container {
+    width: min(90%, 400px);
+    margin: 0 auto;
+
+    
+}
+

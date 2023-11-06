@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <link rel="stylesheet" href="assets/style.css">
+    </head>     
+    <body>
+        <div class="container">
+            <form action="#"  method="get">
+                <div class="form_row">
+                <label for="username"> Повне ім'я </label>
+                <input type="text" name="username" id="username">
+            </div>
+               
+              <div class="form_row">
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email">
+              </div>
+              <div class="form_row">
+                <label for="password">Пароль</label>
+                <input type="password" name="password" id="password">
+              </div>
+                <div class="form_row">
+                    <label for="password_again">Пароль ще раз</label>
+                    <input type="password_again" name="password_again"
+                    id="password_again">
+                </div>
+                <div class="form_row">
+                    <span for="gender">Стать</span>
+                    <input type="radio" name="gender" value="man"
+                    id="gender">чоловіча
+                    <input type="radio" name="gender" value="woman"
+                    id="gender_1">жіноча
+                </div>
+                <div class="form_row">
+                    <table for="age">Вік</table>
+                    <input type="age" name="age" id="age">
+                </div>
+                <div>
+                        <br>
+                        <label for="course">Курс</label>
+                        <select name="course" id="course">
+                            <option value="0" disabled selected>
+                                -=Виберіть курс-=
+                            </option>
+                            <option value="1">Front_End</option>
+                            <option value="2">Back_End</option>
+                            <option value="3">Project Management</option>
+                            <option value="4">QA Manual</option>
+                        </select>
+                    </div>
+                    <div class="form_row">
+                        <label for="adress">Повна адреса</label> 
+                    </div>
+                        <textarea
+                            name="adress"
+                            id="adress"
+                            cols="30"
+                            rows="4"
+                            placeholder="Країна,регіон,місто/селище,вулиця"></textarea>
+                   
+                    <div class="form_row">
+                        <br>
+                        <input type="checkbox" name="agree" id="agree">
+                        <lable for="agree"
+                            >Я погоджуюсь з обробкою персональних даних</lable>
+                    </div>
+                <div class="form_row">
+                    <br>
+                    <button type="button">Очистити форму</button>
+                    <button type="button">Зареєструватися</button>
+                </div>
+            </form>
+        </div>
+    </body>
+</html>
