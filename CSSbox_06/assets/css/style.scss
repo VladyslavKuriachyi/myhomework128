@@ -1,9 +1,339 @@
+$bg: #F90;
+$color: #2F281E;
+$bg1: #ffF;
+$text_color: #544837;
+
+
+
+
+
+
+
+
 *, *::before, *::after {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    gap: 40px;
+}
+
+ul {
+    list-style: none;
 }
 
 body {
-    font-family: 'Courier New', Courier, monospace;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
 }
+li {
+    list-style: none;
+}
+.container {
+    width: min(90%, 1440px);
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+header {
+    padding: 17px 0;
+    background-color: $bg1;
+   .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   } 
+.main-navigation ul {
+    display: flex;
+    justify-content:center;
+    gap: 40px;
+    list-style: none;
+    align-items: center;
+    }
+ 
+    .btn_white {
+        
+        border-radius: 4px;
+        padding: 13px 25px;
+        cursor: pointer;
+        border: none;
+        background-color: #ffF;
+        border: 1px solid #BCD0E5;
+        
+    
+    }
+    .btn {
+        border-radius: 4px;
+        padding: 13px 25px;
+        cursor: pointer;
+        border: none;
+        color: #ffF;
+        background: #F90
+        
+    }
+
+    .btn:hover {
+     background-color: #BCD0E5;
+     transition: all .4s ;
+    }
+
+   .btn_white:hover {
+    color: #ffF;
+    background-color: #F90;
+    transition: all .4s ;
+    opacity: 50%;
+   }
+
+        
+    }
+  
+    .first_screen {
+        h1{
+            color: $color;
+            font-family: Montserrat;
+            font-size: 2.75rem;
+        }
+        p {
+            color: $text_color;
+            font-family: Montserrat;
+            font-size: 1.125rem;
+            margin-top: 1.8rem;
+        }
+        .btn_large {
+            margin-top: 33px;
+            border-radius: 4px;
+            padding: 13px 40px;
+            cursor: pointer;
+            border: none;
+            color: #ffF;
+            background: #F90
+        }
+
+        .btn_large:hover {
+            background-color: #BCD0E5;
+            transition: all .4s ;
+            opacity: 50%;
+        }
+    }
+.features {
+    display: flex;
+    width: 90rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+        color: $color;
+        text-align: center;
+        font-size: 2.25rem;
+        margin-top: 99px;
+    }
+
+    .btn_large1 {
+        margin-top: 70px;
+        border-radius: 4px;
+        padding: 13px 40px;
+        cursor: pointer;
+        border: none;
+        color: #ffF;
+        background: #F90
+    }
+    .h3{
+    gap: 30px;
+    }
+
+    .btn_large1:hover {
+     background-color: #BCD0E5;
+     transition: all .4s ;
+     opacity: 50%;
+    }
+
+}
+.skill_list {
+    margin-top: 50px;
+}
+
+
+.benefits {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 104px;
+   
+
+    .list {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+
+    h2{
+        color: $color;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+        text-align: left;
+        
+    }
+    .h4{
+        color: $text_color;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: bold;
+        line-height: 26px; 
+        text-align: left;
+       
+    }
+    p {
+        color: $text_color;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; 
+        text-align: left;
+}
+}
+.product-managers {
+    display: flex;
+    width: 1200px;
+    align-items: center;
+    margin-top: 100px;
+
+    .list {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    h2 {
+        color: $color;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+    p {
+        color: $text_color;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px; 
+    }
+}
+
+.marketers {
+    display: flex;
+    width: 1200px;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px;
+
+    .list {
+        display: inline-flex;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 30px;
+    }
+    h2 {
+        color: $color;
+        font-family: Montserrat;
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;  
+    }
+    p {
+        color: $text_color;
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+    }
+
+    .h4 {
+        font-family: Montserrat;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: bold;
+        font-weight: 700;
+        line-height: 26px;
+    }
+}
+
+.footer {
+    margin-top: 100px;
+    margin-bottom: 70px;
+
+    .line{
+        margin-bottom: 70px;
+        width: 1440px;
+        height: 1px;
+        background: #BCD0E5;
+        opacity: 50%;
+    }
+.container{
+    display: flex;
+width: 1200px;
+height: 209px;
+padding-bottom: 0px;
+justify-content: space-between;
+align-items: flex-start;
+flex-shrink: 0;
+}
+
+.h4 {
+    font-weight: bold;
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 25px;
+}
+.list{
+display: flex;
+width: 135px;
+flex-direction: column;
+align-items: flex-start;
+gap: 30px;
+flex-shrink: 0;
+}
+.list1 {
+display: flex;
+width: 135px;
+flex-direction: column;
+align-items: flex-start;
+gap: 30px;
+flex-shrink: 0;
+}
+.class1 {
+display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 25px;
+}
+.btn_large1 {
+    margin-top: 25px;
+    border-radius: 4px;
+    padding: 13px 40px;
+    cursor: pointer;
+    border: none;
+    color: #ffF;
+    background: #F90
+}
+
+.btn_large1:hover {
+    background-color: #BCD0E5;
+     transition: all .4s ;
+     opacity: 50%;
+}
+
+}
+
